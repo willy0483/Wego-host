@@ -337,18 +337,21 @@ function RouteComponent() {
 
             <h4 className="text-[18px] my-4">Chaufføren:</h4>
             <div>
-              <figure className="flex gap-6 justify-center">
+              <figure className="flex gap-6 justify-center flex-row items-center">
                 <img
                   src={user.imageUrl}
                   alt="user image"
-                  className="rounded-full w-40"
+                  className="rounded-full w-20 md:w-40"
                 />
-                <figcaption className="flex xl:flex-col items-center gap-5">
+                <figcaption className="flex xl:flex-col justify-between items-center gap-5">
                   <div>
                     <h3 className="font-bold text-2xl">{user.firstname}</h3>
                     <div className="flex gap-2">
                       <Stars avgStars={user.avgStars} />
-                      {`( ${reviews.length} anmeldelser)`}
+                      <p className="hidden md:flex">
+                        {" "}
+                        {`( ${reviews.length} anmeldelser)`}
+                      </p>
                     </div>
                   </div>
                   <ReviewForm id={id} reviewedUserId={userId} />
@@ -396,7 +399,7 @@ function RouteComponent() {
                             <img
                               src={reviewer.imageUrl}
                               alt="user image"
-                              className=" rounded-full w-20 h-20"
+                              className=" rounded-full w-20 h-20 hidden md:flex"
                             />
                             <figcaption>
                               <div>

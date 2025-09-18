@@ -93,7 +93,7 @@ const MobilAside = () => {
     <section className="xl:hidden">
       <Drawer>
         <DrawerTrigger asChild>
-          <div className="max-w-[500px] mx-auto">
+          <div className="max-w-[500px] px-8 mx-auto">
             <button className="flex items-center gap-2 bg-app-primary text-white font-semibold rounded-full px-6 py-3 shadow hover:bg-app-primary/90 transition hover:cursor-pointer w-full justify-center mb-4">
               <SlidersHorizontal className="w-5 h-5" />
               <span>Filter</span>

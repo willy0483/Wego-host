@@ -74,7 +74,7 @@ const ReviewForm = ({
           <img
             src="/icons/chat.svg"
             alt="chat icon"
-            className="xl:hidden w-20 h.20"
+            className="xl:hidden w-15 md:w-20"
           />
         </button>
       </DialogTrigger>
