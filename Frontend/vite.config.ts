@@ -28,7 +28,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      "/images": "http://localhost:8000",
+      "/images": "https://wego-host.onrender.com",
     },
   },
 });
